@@ -7,22 +7,6 @@
 
 /*border: var(--br);*/
 
-hr {
-    margin-bottom: 3.5rem;
-    border-width: 0;
-    border-top: 2px solid #e1e1e1;
-}
-
-body {
-    line-height: 1.6;
-    font-weight: 400;
-    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #222;
-    text-align: center;
-    font-size: 30px;
-    background-color: linen;
-}
-
 .button,
 button,
 input[type="submit"],
@@ -33,7 +17,7 @@ input[type="button"] {
     padding: 13px 30px;
     color: #555;
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
@@ -41,7 +25,7 @@ input[type="button"] {
     white-space: nowrap;
     background-color: rgba(51, 195, 240, .4);
     border-radius: 4px;
-    border: 1px solid #bbb;
+    border: none;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -56,14 +40,16 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-    color: #333;
-    border-color: #888;
+    color: var(--grey8);
     outline: 0;
 }
 
+.button:active {
+    box-shadow: inset 0 0 0 1px linen;
+}
 
-/*.button:active {box-shadow: inset 0 0 0 1px linen;}
 
+/*
 .button--green { background: #00B35E; color: #fff; }
 .button--red { background: #F8011E; color: #fff; }
 .button--blue { background: #0096D9; color: #fff; }

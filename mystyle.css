@@ -22,7 +22,7 @@ div[class^="c"] {
     }
     .row {
         display: flex;
-justify-content: space-between;
+        justify-content: space-between;
     }
     .c1 {
         width: 8.3333333333%;
@@ -107,7 +107,7 @@ hr {
 body {
     line-height: 1.6;
     font-weight: 400;
-    font-family: var(--font-family-sans-serif);
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #222;
     text-align: center;
     font-size: 30px;
