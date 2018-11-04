@@ -1,0 +1,81 @@
+.content__wrapper { padding: 10px 0; }
+
+
+.checkbox { position: absolute; left: -9999px; }
+
+.checkbox + label { position: relative; display: inline-block; padding: 6px 30px; cursor: pointer; }
+
+.checkbox + label:before { 
+    position: absolute; 
+    top: 4px;
+     left: 2px;
+ width: 20px;
+ height: 20px;
+ border: 1px solid #CCC;
+ border-radius: 1px;
+ background-color: #fff;
+ content: ''; }
+
+.checkbox + label:after {
+     position: absolute; 
+     color: #fff;
+     content: ''; 
+     border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+ border-right: 1.5px solid #fff; 
+ border-bottom: 1.5px solid #fff; 
+ -webkit-transform: rotate(37deg);
+  transform: rotate(37deg); 
+  -webkit-transition: border 0.25s, background-color 0.25s; 
+  transition: border 0.25s, background-color 0.25s; 
+  -webkit-transform-origin: 100% 100%; 
+  transform-origin: 100% 100%;
+ }
+
+
+
+.checkbox:not(:checked) + label:after { width: 0; height: 0; top: 8px; left: 1px; }
+
+.checkbox:checked + label:before { border-color: #000; background-color: #000; }
+
+.checkbox:checked + label:after { width: 8px; height: 13px; top: 6px; left: 1px; }
+
+.checkbox:disabled + label { color: #CCC; }
+
+.checkbox:disabled + label:before { border-color: #CCC; background-color: #F2F2F2; -webkit-box-shadow: none; box-shadow: none; }
+
+.checkbox:disabled + label:after { display: none; }
+
+.checkbox--blue:checked + label:before { border-color: #0096D9; background-color: #0096D9; }
+
+
+
+
+
+
+
+
+
+
+
+.radio { position: absolute; left: -9999px; }
+
+.radio + label { position: relative; display: inline-block; padding: 2px 30px; cursor: pointer; }
+
+.radio + label:before, .radio + label:after { position: absolute; top: 0; content: ''; -webkit-transition: all .2s; transition: all .2s; }
+
+.radio + label:before { left: 3px; width: 12px; height: 12px; margin-top: 3px; border: 1px solid #000; border-radius: 50%; -webkit-transition: background-color 0.25s; transition: background-color 0.25s; }
+
+.radio + label:after { left: 0; width: 18px; height: 18px; border: 1px solid #000; border-radius: 50%; }
+
+.radio:checked + label:before { background-color: #000; }
+
+.radio:disabled + label { color: #CCC; }
+
+.radio:disabled + label:before { border: 1px solid #CCC; }
+
+.radio:disabled + label:after { border: 1px solid #CCC; }
+
+.radio--blue + label:before, .radio--blue + label:after { border: 1px solid #0096D9; }
+
+.radio--blue:checked + label:before { background-color: #0096D9; }

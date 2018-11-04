@@ -1,0 +1,21 @@
+
+.tabs__item { display: inline-block; }
+
+.tabs__item a { position: relative; display: block; padding: 1.3em; text-decoration: none; }
+
+.tabs__item a:hover { background-color: #F2F2F2; text-decoration: none; }
+
+.tabs__item--active { border-bottom: 2px solid #0096D9; }
+
+.tabs__item--active a { color: black; }
+
+.tabs__itemv { display: block; margin: .3em 0; max-width: 200px; }
+
+.tabs__itemv a { position: relative; display: block; padding: 1.3em; background-color: #F2F2F2; text-decoration: none; }
+
+.tabs__itemv a:hover { background-color: #CCC; text-decoration: none; }
+
+.tabs__itemv--active { border-left: 2px solid #0096D9; background-color: #CCC; }
+
+.tabs__itemv--active a { background-color: #CCC; color: black; }
+

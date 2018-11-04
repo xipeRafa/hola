@@ -1,0 +1,93 @@
+/*----------table responsive------*/
+
+table {
+    width: 100%;
+    background: transparent;
+    margin: 1.25em 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table tr th,
+table tr td {
+    padding: 0.5625em 0.625em;
+    font-size: 0.875em;
+    color: #222222;
+    border: 1px solid #dddddd;
+}
+
+table tr.even,
+table tr.alt,
+table tr:nth-of-type(even) {
+    background: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    table.table,
+    .table thead,
+    .table tbody,
+    .table tr,
+    .table th,
+    .table td,
+    .table caption {
+        display: block;
+    }
+    table.table {
+        border: none
+    }
+    .table thead tr {
+        display: none;
+    }
+    .table tbody tr {
+        margin: 1em 0;
+    }
+    .table td {
+        border: none;
+        border-bottom: 1px solid #dddddd;
+        position: relative;
+        padding-left: 45%;
+        text-align: center;
+    }
+    .table tr td:last-child {
+        border-bottom: 1px double #dddddd;
+    }
+    .table tr:last-child td:last-child {
+        border: none;
+    }
+    .table td:before {
+        position: absolute;
+        top: 16px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: center;
+        font-weight: bold;
+    }
+    /*-----reemplazaremos el contenido de los <th>----*/
+    td:nth-of-type(1):before {
+        content: "Title";
+    }
+    td:nth-of-type(2):before {
+        content: "Text";
+    }
+    td:nth-of-type(3):before {
+        content: "Show";
+    }
+    td:nth-of-type(4):before {
+        content: "Edit";
+    }
+    td:nth-of-type(5):before {
+        content: "Delete";
+    }
+    /*  td:nth-of-type(6):before {
+        content: "Precio";
+    } */
+}
+
+
+/* @media screen and (max-width: 700px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }}*/

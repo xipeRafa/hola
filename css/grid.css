@@ -1,0 +1,195 @@
+.grid{
+    margin: 3px auto;  /*a un lado de un grid*/
+   display: grid;
+   grid-gap:6px;
+    /* background-color: #2196F3;*/
+   /*align-content: stretch;	*/
+}
+     
+.grid > div{
+    text-align: center;
+    /*padding: 10px; */
+    font-size: 30px;
+    background-color: rgba(25, 255, 255, 0.8);
+    border: 2px solid gray;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+    .grid{
+         width: 93%;
+    }
+}
+
+@media (min-width: 550px) {
+
+  .item1 {
+     /*posicion y espacios de la columna*/
+     grid-column: 1 / span 1;
+     /*posicion y espacios de la renglon*/
+     grid-row: 1 / span 1;
+  }
+  .item2 {
+   grid-column: 2/span 1;
+   grid-row: 2 / span 1;
+  }
+  .item3 {
+    /*el grid column mayor determina la cantidad de columnas*/
+    grid-column: 3 / span 1;
+    /*el grid row mayor determina la cantidad de renglones*/
+    grid-row: 3/ span 1;
+  }
+  .item4 {
+       /*posicion y espacios de la columna*/
+    grid-column: 1/span 1;
+     /*posicion y espacios de la renglon */
+    grid-row: 1 / span 2;
+   }
+   .item5 {
+    grid-column: 2/span 1;
+    grid-row: 1 / span 1;
+   }
+   .item6 {
+    grid-column: 2/span 1;
+    grid-row: 2 / span 1;
+   }
+   .item7 {
+    /*el grid column mayor determina la cantidad de columnas*/
+    grid-column: 1 / span 7;
+    /*el grid row mayor determina la cantidad de renglones*/
+    grid-row: 1/ span 1;
+  }
+  .item8 {
+       /*posicion y espacios de la columna */
+    grid-column: 1/span 1;
+     /*posicion y espacios de la renglon */
+    grid-row: 2/ span 4; 
+   
+   }
+   .item9 {
+    grid-column: 2/span 1;
+    grid-row: 2/ span 1;
+   }
+   .item10 {
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
+   }
+   .item11 {
+    /*el grid column mayor determina la cantidad de columnas*/
+    grid-column: 4 / span 1;
+    /*el grid row  mayor determina la cantidad de renglones */
+    grid-row: 5/ span 3;
+  }
+  .item12 {
+       /*posicion y espacios de la columna*/
+    grid-column: 5/span 1;
+     /*posicion y espacios de la renglon */
+    grid-row: 5 / span 1;
+   }
+   .item13 {
+    grid-column: 6/span 1;
+    grid-row:2/ span 3;
+   }
+   .item14 {
+    grid-column: 7/span 1;
+    grid-row: 7 / span 1;
+   }
+   .item15 {
+    grid-column: 7/span 1;
+    grid-row: 8 / span 1;
+   }
+   .item16 {
+    grid-column: 1/span 1;
+    grid-row: 3 / span 1;
+   }
+   .item17 {
+    grid-column: 3/span 1;
+    grid-row: 1 / span 1;
+   }
+   .item18 {
+    grid-column: 7/span 1;
+    grid-row: 3 / span 1;
+   }
+   .item19 {
+    grid-column: 1/span 1;
+    grid-row: 1/ span 1;
+   }
+   .item20 {
+    grid-column: 2/span 1;
+    grid-row: 1 / span 1;
+   }
+   .item21 {
+    grid-column: 3/span 1;
+    grid-row: 1 / span 1;
+   } 
+   
+   
+
+
+   
+}
+.grid2 {
+    grid-column-gap: 4%;
+}
+.grid3 {
+    grid-gap: 6px;
+    margin: 6px auto;/*entre dos grids juntos*/
+    height: 32em;
+}
+
+   
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+    .grid{
+        width: 87%;
+      
+    }
+}
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .grid{
+       width: 80%;
+       
+    }
+   
+}
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+    .item22{
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 1;
+    }
+    
+       .item23{
+           grid-column: 5 / span 3;
+           grid-row: 1 / span 1;
+       }
+       .item24{
+           grid-column: 1/ span 3;
+           grid-row: 2 / span 2;
+       }
+       .item25{
+           grid-column: 4 / span 4;
+           grid-row: 2 / span 1;
+       }
+       .item26{
+           grid-column: 4/ span 4;
+           grid-row: 3 / span 1;
+       }
+       .item27{
+           grid-column: 1/ span 2;
+           grid-row: 4 / span 1;
+       }
+       .item28{
+           grid-column: 3 / span 3;
+           grid-row: 4 / span 1;
+       }
+       .item29{
+           grid-column: 6 / span 2;
+           grid-row: 4 / span 1;
+       }
+}
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+

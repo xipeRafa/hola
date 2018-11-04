@@ -1,0 +1,285 @@
+:root {
+    --br: 1px solid red;
+    --bg: 1px solid green;
+    --bb: 1px solid blue;
+}
+
+
+/*border: var(--br);*/
+
+hr {
+    margin-bottom: 3.5rem;
+    border-width: 0;
+    border-top: 2px solid #e1e1e1;
+}
+
+body {
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+    text-align: center;
+    font-size: 30px;
+    background-color: linen;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    display: inline-block;
+    height: 40px;
+    padding: 13px 30px;
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: rgba(51, 195, 240, .4);
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0;
+}
+
+
+/*.button:active {box-shadow: inset 0 0 0 1px linen;}
+
+.button--green { background: #00B35E; color: #fff; }
+.button--red { background: #F8011E; color: #fff; }
+.button--blue { background: #0096D9; color: #fff; }
+.button--orange { background: #F7931E; color: #fff; }
+.button--gray { background: #999; color: #000; }
+.button--info{ background: #009897; color: #fff; }
+
+.button-light--green { border: 1px solid #00B35E; background: transparent; color: #00B35E; }
+.button-light--red { border: 1px solid #F8011E; background: transparent; color: #F8011E; }
+.button-light--blue { border: 1px solid #0096D9; background: transparent; color: #0096D9; }
+.button-light--orange { border: 1px solid #F7931E; background: transparent; color: #F7931E; }
+.button-light--gray { border: 1px solid #999; background: transparent; color: #999; }
+.button-light--info { border: 1px solid #009897; background: transparent; color: #009897; }*/
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+    width: 50%;
+    height: 38px;
+    padding: 6px 10px;
+    /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+
+/* Removes awkward default styles on some inputs for iOS */
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    resize: none;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid #33c3f0;
+    outline: 0;
+}
+
+label,
+legend {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+fieldset {
+    padding: 0;
+    border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline;
+}
+
+label>.label-body {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-weight: normal;
+}
+
+ul {
+    list-style: circle inside;
+}
+
+ol {
+    list-style: decimal inside;
+}
+
+ol,
+ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin: .5rem 0 5rem .3rem;
+    font-size: 90%;
+}
+
+li {
+    margin-bottom: .1rem;
+}
+
+code {
+    padding: 0.2rem 0.5rem;
+    margin: 0 0.2rem;
+    font-size: 90%;
+    white-space: nowrap;
+    background: #f1f1f1;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+}
+
+pre>code {
+    display: block;
+    padding: 1rem 1.5rem;
+    white-space: pre;
+}
+
+input,
+textarea,
+select,
+fieldset {
+    margin-bottom: .5rem;
+}
+
+pre,
+blockquote,
+dl,
+figure,
+p,
+ul,
+ol,
+form {
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+.button--green {
+    background: #00B35E;
+    color: #fff;
+}
+
+.button--red {
+    background: #F8011E;
+    color: #fff;
+}
+
+.button--blue {
+    background: #0096D9;
+    color: #fff;
+}
+
+.button--orange {
+    background: #F7931E;
+    color: #fff;
+}
+
+.button--gray {
+    background: #999;
+    color: #000;
+}
+
+.button--info {
+    background: #009897;
+    color: #fff;
+}
+
+.button-light--green {
+    border: 1px solid #00B35E;
+    background: transparent;
+    color: #00B35E;
+}
+
+.button-light--red {
+    border: 1px solid #F8011E;
+    background: transparent;
+    color: #F8011E;
+}
+
+.button-light--blue {
+    border: 1px solid #0096D9;
+    background: transparent;
+    color: #0096D9;
+}
+
+.button-light--orange {
+    border: 1px solid #F7931E;
+    background: transparent;
+    color: #F7931E;
+}
+
+.button-light--gray {
+    border: 1px solid #999;
+    background: transparent;
+    color: #999;
+}
+
+.button-light--info {
+    border: 1px solid #009897;
+    background: transparent;
+    color: #009897;
+}
